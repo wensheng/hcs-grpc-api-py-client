@@ -21,3 +21,16 @@ Now you (or someone else) need to submit message to the topic.  From the first t
     python submit_message_to_topic.py 0.0.1234567 hello world
 
 You should receive in the 2nd terminal the message that was sent from the first or anywhere else.
+
+## TopicID
+
+Right now you can specify a TopicID by:
+```python
+topicId = TopicID(123456)
+topicId = TopicID(topicNum=123456)
+```
+
+In the future, when hashgraph is sharded, you may have to provide all required fields:
+
+    topidId = TopicID(realmNum=0, shardNum=123, topicNum=123456)
+

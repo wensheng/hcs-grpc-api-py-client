@@ -1,3 +1,4 @@
+*.swp
 deps.txt
 src/hcs_grpc_client/*
 !src/hcs_grpc_client/__init__.py

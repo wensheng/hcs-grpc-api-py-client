@@ -1,5 +1,4 @@
-# hcs-grpc-api-py-client
-**pip install hcs-grpc-client**
+# pip install hcs-grpc-client
 
 This is a [Hedera](https://hedera.com/) Consensus Service (HCS) gRPC mirror node API Python client.
 
@@ -8,15 +7,15 @@ It only has functionality to subscribe to a HCS topic on mirror node.
 For mirror node REST API, use curl or something like Python [`requests`](https://pypi.org/project/requests/).
 
 For all other interactions with Hedera, use an SDK:
-[Python](https://github.com/wensheng/hedera-sdk-py)
-[Java](https://github.com/hashgraph/hedera-sdk-java)
-[Javascript](https://github.com/hashgraph/hedera-sdk-js)
-[Go](https://github.com/hashgraph/hedera-sdk-go)
+[Python](https://github.com/wensheng/hedera-sdk-py),
+[Java](https://github.com/hashgraph/hedera-sdk-java),
+[Javascript](https://github.com/hashgraph/hedera-sdk-js), or
+[Go](https://github.com/hashgraph/hedera-sdk-go).
 
 ## How to Use
 ```python
 import grpc
-from hcs_grpc_client import TopicID, ConsensusTopic, QueryConsensusServiceStub
+from hcs_grpc_client import TopicID, ConsensusTopic, ConsensusServiceStub
 request = ConsensusTopicQuery(topicID=TopicID(2010293))
 channel = grpc.insecure_channel("hcs.testnet.mirrornode.hedera.com:5600")
 stub = ConsensusServiceStub(channel)
@@ -26,7 +25,7 @@ for resp in stream:
     print(resp)
 ```
 
-Make sure the topic exists or create your own topic with SDK.  An example is given in `examples/`.
+Make sure the topic exists or create your own topic with an SDK.  An example is given in `examples/`.
 
 See [examples](https://github.com/wensheng/hcs-grpc-api-py-client/tree/main/examples) for mainnet example and other usages.
 
