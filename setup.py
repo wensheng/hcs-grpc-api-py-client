@@ -26,6 +26,7 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    install_requires=['grpcio>=1.38.1'],
+    install_requires=['grpcio>=1.38.1',
+                      'protobuf>=3.17.3'],
     python_requires=">=3.6",
 )
