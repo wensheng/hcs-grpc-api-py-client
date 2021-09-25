@@ -2,6 +2,6 @@
 ./venv/bin/python -m grpc_tools.protoc \
     --proto_path=hedera-protobufs/services \
     --python_out=src/hcs_grpc_client \
-    hedera-protobufs/services/Timestamp.proto \
-    hedera-protobufs/services/BasicTypes.proto \
-    hedera-protobufs/services/ConsensusSubmitMessage.proto
+    hedera-protobufs/services/timestamp.proto \
+    hedera-protobufs/services/basic_types.proto \
+    hedera-protobufs/services/consensus_submit_message.proto

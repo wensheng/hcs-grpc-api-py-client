@@ -4,4 +4,4 @@
     --python_out=src/hcs_grpc_client \
     --grpc_python_out=src/hcs_grpc_client \
     --dependency_out=deps.txt \
-    hedera-protobufs/mirror/ConsensusService.proto
+    hedera-protobufs/mirror/consensus_service.proto

@@ -45,7 +45,7 @@ Setup virtual env for python then install dependencies:
 
 Generate code (compile .proto to .py):
 
-    ./compile.sh
+    ./compile.sh  # make sure deps.txt match compile_deps.sh
     ./compile_deps.sh
 
 Build package:
