@@ -15,7 +15,7 @@ For all other interactions with Hedera, use an SDK:
 ## How to Use
 ```python
 import grpc
-from hcs_grpc_client import TopicID, ConsensusTopic, ConsensusServiceStub
+from hcs_grpc_client import TopicID, ConsensusTopicQuery, ConsensusServiceStub
 request = ConsensusTopicQuery(topicID=TopicID(2010293))
 channel = grpc.insecure_channel("hcs.testnet.mirrornode.hedera.com:5600")
 stub = ConsensusServiceStub(channel)
