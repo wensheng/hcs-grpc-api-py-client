@@ -2,7 +2,7 @@ import os
 import setuptools
 
 src_files = os.listdir("src/hcs_grpc_client")
-version = "0.18.1"  # keep track of 'hedera-protobufs' version
+version = "0.20.0"  # keep track of 'hedera-protobufs' version
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
